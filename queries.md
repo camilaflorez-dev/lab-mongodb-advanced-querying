@@ -142,7 +142,7 @@ limit:
 ### 18. All the companies that have been acquired on the first trimester of the year. Limit the search to 10 companies, and retrieve only their `name` and `acquisition` fields.
 
 query: {"acquisition.acquired_month":{$lte: 4}}
-projection: {_id: 0, name: 1, acquisition: 1}
+projection: { name: 1, acquisition: 1}
 sort: 
 skip: 
 limit: 10
